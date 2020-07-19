@@ -9,7 +9,7 @@ namespace XSOverlayTitleHider
         public const string Name = "XSOverlayTitleHider"; // Name of the Mod.  (MUST BE SET)
         public const string Author = "KortyBoi"; // Author of the Mod.  (Set as null if none)
         public const string Company = null; // Company that made the Mod.  (Set as null if none)
-        public const string Version = "1.2.0"; // Version of the Mod.  (MUST BE SET)
+        public const string Version = "1.2.1"; // Version of the Mod.  (MUST BE SET)
         public const string DownloadLink = "https://github.com/KortyBoi/XSOverlayTitleHider"; // Download Link for the Mod.  (Set as null if none)
         public const string Description = "Applies a title change for the MelonLoader Console Window, hiding it from XSOverlay.";
     }
@@ -18,7 +18,7 @@ namespace XSOverlayTitleHider
     {
         private const string ModCategory = "CustomConsoleTitle";
         private const string CustomTitleText = "TitleText";
-        string TitleString;
+        private string TitleString;
 
         public override void OnApplicationStart() // Runs after Game Initialization.
         {
@@ -28,17 +28,17 @@ namespace XSOverlayTitleHider
 
             TitleString = ModPrefs.GetString(ModCategory, CustomTitleText);
 
-            Console.Title = string.Format(CustomTitleText);
+            Console.Title = string.Format(TitleString);
         }
 
         public override void OnModSettingsApplied()
         {
-            // Highly recommend using UIExpansionKit to easily change your title
+            // Highly recommend using UIExpansionKit to easily change your title (For VRChat)
 
             TitleString = ModPrefs.GetString(ModCategory, CustomTitleText);
-            // Requires Game Restart to take effect
 
-            MelonModLogger.Log("Changed console title to: " + CustomTitleText + " - Please Restart your game to take effect.");
+            Console.Title = string.Format(TitleString);
+            MelonModLogger.Log("Set console title to: " + TitleString);
         }
     }
 }
