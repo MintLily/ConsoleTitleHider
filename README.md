@@ -23,3 +23,8 @@ For VRChat, you can use the [UIExpansionKit](https://github.com/knah/VRCMods) Mo
 - Audica
 - H3VR
 - Pistol Whip
+
+### 
+- Phasmophobia
+- Blade and Sorcery
+- The Forest
