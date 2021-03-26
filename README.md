@@ -28,3 +28,8 @@ For VRChat, you can use the [UIExpansionKit](https://github.com/knah/VRCMods) Mo
 - Phasmophobia
 - Blade and Sorcery
 - The Forest
+
+
+
+## Stay Updated
+Stay update to date with all my mods by joining my [discord server](https://discord.gg/qkycuAMUGS) today.
