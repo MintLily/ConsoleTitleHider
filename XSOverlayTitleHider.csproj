@@ -27,8 +27,8 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MelonLoader.ModHandler, Version=0.2.7.4, Culture=neutral, PublicKeyToken=null">
-      <HintPath>Output\XSOverlayTitleHider\MelonLoader.ModHandler.dll</HintPath>
+    <Reference Include="MelonLoader, Version=0.5.3.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\MelonLoader\MelonLoader.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
