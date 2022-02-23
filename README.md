@@ -10,7 +10,8 @@ Click [this link](https://melonwiki.xyz/) to get started!
 
 ### How-To
 Manually change it in your `modprefs.ini` file or `MelonPreferences.cfg`<br>
-For VRChat, you can use the [UIExpansionKit](https://github.com/knah/VRCMods) Mod to easily apply settings while you're in-game.
+For VRChat, you can use the [UIExpansionKit](https://github.com/knah/VRCMods) Mod to easily apply settings while you're in-game.<br>
+You can use the `{GAME}` and `{PUBLISHER}` wildcards to insert the name of the publisher and game into your custom text.
 
 ### MelonPreferences (Default Values)
 ```ini

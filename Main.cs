@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.IO;
 using MelonLoader;
 using Console = System.Console;
 
@@ -19,12 +20,30 @@ namespace XSOverlayTitleHider {
         private Process[] p;
         private bool Started;
 
+        private static (string publisher, string game) GetPublisherAndGameTitle()
+        {
+            string appInfoPath = Path.Combine(MelonUtils.GetGameDataDirectory(), "app.info");
+            string appInfo = File.ReadAllText(appInfoPath);
+            string[] appInfoLines = appInfo.Split('\n');
+            return (appInfoLines[0], appInfoLines[1]);
+        }
+
+        readonly (string publisher, string game) _titleData = GetPublisherAndGameTitle();
+
+        private string GetFormattedTitleText()
+        {
+            string constructedText = MelonPrefs.GetString(ModCategory, CustomTitleText);
+            constructedText = constructedText.Replace("{PUBLISHER}", _titleData.publisher);  
+            constructedText = constructedText.Replace("{GAME}", _titleData.game);
+            return constructedText;
+        }
+
         public override void OnApplicationStart() {
             p = Process.GetProcessesByName("XSOverlay");
             if (p.Length >= 1) {
                 MelonPrefs.RegisterCategory(ModCategory, "Custom Console Title");
                 MelonPrefs.RegisterString(ModCategory, CustomTitleText, "Being a Cutie!", "Custom Console Text");
-                TitleString = MelonPrefs.GetString(ModCategory, CustomTitleText);
+                TitleString = GetFormattedTitleText();
                 Console.Title = string.Format(TitleString);
                 Started = true;
             }
@@ -33,7 +52,7 @@ namespace XSOverlayTitleHider {
         public override void OnModSettingsApplied() {
            if (Started) {
                 // Highly recommend using UIExpansionKit to easily change your title (For VRChat)
-                TitleString = MelonPrefs.GetString(ModCategory, CustomTitleText);
+                TitleString = GetFormattedTitleText();
                 Console.Title = string.Format(TitleString);
                 MelonLogger.Log("Set console title to: " + TitleString);
            }
