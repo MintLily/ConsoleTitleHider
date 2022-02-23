@@ -16,7 +16,7 @@ using MelonLoader;
 [assembly: AssemblyVersion(XSOverlayTitleHider.BuildInfo.Version)]
 [assembly: AssemblyFileVersion(XSOverlayTitleHider.BuildInfo.Version)]
 [assembly: NeutralResourcesLanguage("en")]
-[assembly: MelonInfo(typeof(XSOverlayTitleHider.XSOverlayTitleHider), XSOverlayTitleHider.BuildInfo.Name, XSOverlayTitleHider.BuildInfo.Version, XSOverlayTitleHider.BuildInfo.Author, XSOverlayTitleHider.BuildInfo.DownloadLink)]
+[assembly: MelonInfo(typeof(XSOverlayTitleHider.Main), XSOverlayTitleHider.BuildInfo.Name, XSOverlayTitleHider.BuildInfo.Version, XSOverlayTitleHider.BuildInfo.Author, XSOverlayTitleHider.BuildInfo.DownloadLink)]
 
 
 // Create and Setup a MelonModGame to mark a Mod as Universal or Compatible with specific Games.
