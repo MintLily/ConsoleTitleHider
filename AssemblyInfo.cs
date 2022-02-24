@@ -3,20 +3,20 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using MelonLoader;
 
-[assembly: AssemblyTitle(XSOverlayTitleHider.BuildInfo.Name)]
-[assembly: AssemblyDescription(XSOverlayTitleHider.BuildInfo.Description)]
+[assembly: AssemblyTitle(ConsoleTitleHider.BuildInfo.Name)]
+[assembly: AssemblyDescription(ConsoleTitleHider.BuildInfo.Description)]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany(XSOverlayTitleHider.BuildInfo.Company)]
-[assembly: AssemblyProduct(XSOverlayTitleHider.BuildInfo.Name)]
-[assembly: AssemblyCopyright("Created by " + XSOverlayTitleHider.BuildInfo.Author)]
-[assembly: AssemblyTrademark(XSOverlayTitleHider.BuildInfo.Company)]
+[assembly: AssemblyCompany(ConsoleTitleHider.BuildInfo.Company)]
+[assembly: AssemblyProduct(ConsoleTitleHider.BuildInfo.Name)]
+[assembly: AssemblyCopyright("Created by " + ConsoleTitleHider.BuildInfo.Author)]
+[assembly: AssemblyTrademark(ConsoleTitleHider.BuildInfo.Company)]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
 //[assembly: Guid("")]
-[assembly: AssemblyVersion(XSOverlayTitleHider.BuildInfo.Version)]
-[assembly: AssemblyFileVersion(XSOverlayTitleHider.BuildInfo.Version)]
+[assembly: AssemblyVersion(ConsoleTitleHider.BuildInfo.Version)]
+[assembly: AssemblyFileVersion(ConsoleTitleHider.BuildInfo.Version)]
 [assembly: NeutralResourcesLanguage("en")]
-[assembly: MelonInfo(typeof(XSOverlayTitleHider.Main), XSOverlayTitleHider.BuildInfo.Name, XSOverlayTitleHider.BuildInfo.Version, XSOverlayTitleHider.BuildInfo.Author, XSOverlayTitleHider.BuildInfo.DownloadLink)]
+[assembly: MelonInfo(typeof(ConsoleTitleHider.Main), ConsoleTitleHider.BuildInfo.Name, ConsoleTitleHider.BuildInfo.Version, ConsoleTitleHider.BuildInfo.Author, ConsoleTitleHider.BuildInfo.DownloadLink)]
 
 
 // Create and Setup a MelonModGame to mark a Mod as Universal or Compatible with specific Games.
