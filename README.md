@@ -1,4 +1,4 @@
-# XSOverlayTitleHider
+# ConsoleTitleHider
 Universal MelonLoader Mod, that is used to hide the default title console is given with MelonLoader. This is to hide XSOverlay's Discord Rich Presence game title, replacing it to Anything of your choosing.<br>
 This mod will work for MelonLoader Modded games using both IL2CPP and MonoBleedingEdge (Mono)
 
@@ -9,7 +9,7 @@ Need to install MelonLoader?<br>
 Click [this link](https://melonwiki.xyz/) to get started!
 
 ### How-To
-Manually change it in your `modprefs.ini` file or `MelonPreferences.cfg`<br>
+Manually change it in your `MelonPreferences.cfg` file<br>
 For VRChat, you can use the [UIExpansionKit](https://github.com/knah/VRCMods) Mod to easily apply settings while you're in-game.
 
 ### MelonPreferences (Default Values)
